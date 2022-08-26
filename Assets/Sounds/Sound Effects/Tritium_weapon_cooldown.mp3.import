@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Tritium_weapon_cooldown.mp3-4edf85c9e22c85719d52b59585351950.mp3str"
+
+[deps]
+
+source_file="res://Assets/Sounds/Sound Effects/Tritium_weapon_cooldown.mp3"
+dest_files=[ "res://.import/Tritium_weapon_cooldown.mp3-4edf85c9e22c85719d52b59585351950.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0
