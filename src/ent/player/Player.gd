@@ -1,14 +1,18 @@
 extends KinematicBody2D
 
-const GRAVITY = 30
-const JUMP_HIGHT = -650
+export var GRAVITY = 30
+export var JUMP_HEIGHT = -650
+
+export var slipperyness = 2
+export var hp = 100
+
+export var bullet = preload("res://scn/ent/player/Player_bullet.tscn")
 
 var saving = 0
 var velocity = Vector2 (0, 0)
 var max_speed = 100
-var hp = 100
 var lives = 2
-var slipperyness = 2
+
 var max_hp = 100
 var hptank_parts = 0
 
@@ -24,7 +28,6 @@ var bullet_timer = 0
 var recharge_time = 0.5
 var charge_level = 0
 var max_charge_level = 2
-const BULLET = preload("res://scn/ent/player/Player_bullet.tscn")
 
 signal hpChange
 signal lifeChange
@@ -147,7 +150,7 @@ func _physics_process(_delta):
 
 	# Jump animation / Up movement
 	if Input.is_action_just_pressed("Up") and is_on_floor() or Input.is_action_just_pressed("Up") and is_on_wall():
-		if saving == 0: velocity.y = JUMP_HIGHT
+		if saving == 0: velocity.y = JUMP_HEIGHT
 		
 		# Wall jump
 		
@@ -253,7 +256,7 @@ func shoot():
 		bullet_timer = 1
 		
 		if Input.is_action_just_released("Shoot") or weapon_mode == "rapid":
-			var pb = BULLET.instance()
+			var pb = bullet.instance()
 			
 			get_parent().add_child(pb)
 			

@@ -1,0 +1,184 @@
+[gd_scene load_steps=125 format=2]
+
+[ext_resource path="res://res/img/ent/misc/item_capsule/Item_capsule_031.png" type="Texture" id=1]
+[ext_resource path="res://res/img/ent/misc/item_capsule/Item_capsule_093.png" type="Texture" id=2]
+[ext_resource path="res://res/img/ent/misc/item_capsule/Item_capsule_010.png" type="Texture" id=3]
+[ext_resource path="res://res/img/ent/misc/item_capsule/Item_capsule_101.png" type="Texture" id=4]
+[ext_resource path="res://res/img/ent/misc/item_capsule/Item_capsule_071.png" type="Texture" id=5]
+[ext_resource path="res://res/img/ent/misc/item_capsule/Item_capsule_096.png" type="Texture" id=6]
+[ext_resource path="res://res/img/ent/misc/item_capsule/Item_capsule_116.png" type="Texture" id=7]
+[ext_resource path="res://res/img/ent/misc/item_capsule/Item_capsule_112.png" type="Texture" id=8]
+[ext_resource path="res://res/img/ent/misc/item_capsule/Item_capsule_047.png" type="Texture" id=9]
+[ext_resource path="res://res/img/ent/misc/item_capsule/Item_capsule_044.png" type="Texture" id=10]
+[ext_resource path="res://res/img/ent/misc/item_capsule/Item_capsule_072.png" type="Texture" id=11]
+[ext_resource path="res://res/img/ent/misc/item_capsule/Item_capsule_060.png" type="Texture" id=12]
+[ext_resource path="res://res/img/ent/misc/item_capsule/Item_capsule_098.png" type="Texture" id=13]
+[ext_resource path="res://res/img/ent/misc/item_capsule/Item_capsule_117.png" type="Texture" id=14]
+[ext_resource path="res://res/img/ent/misc/item_capsule/Item_capsule_115.png" type="Texture" id=15]
+[ext_resource path="res://res/img/ent/misc/item_capsule/Item_capsule_111.png" type="Texture" id=16]
+[ext_resource path="res://res/img/ent/misc/item_capsule/Item_capsule_037.png" type="Texture" id=17]
+[ext_resource path="res://res/img/ent/misc/item_capsule/Item_capsule_114.png" type="Texture" id=18]
+[ext_resource path="res://res/img/ent/misc/item_capsule/Item_capsule_094.png" type="Texture" id=19]
+[ext_resource path="res://res/img/ent/misc/item_capsule/Item_capsule_100.png" type="Texture" id=20]
+[ext_resource path="res://res/img/ent/misc/item_capsule/Item_capsule_106.png" type="Texture" id=21]
+[ext_resource path="res://res/img/ent/misc/item_capsule/Item_capsule_102.png" type="Texture" id=22]
+[ext_resource path="res://res/img/ent/misc/item_capsule/Item_capsule_105.png" type="Texture" id=23]
+[ext_resource path="res://res/img/ent/misc/item_capsule/Item_capsule_118.png" type="Texture" id=24]
+[ext_resource path="res://res/img/ent/misc/item_capsule/Item_capsule_007.png" type="Texture" id=25]
+[ext_resource path="res://res/img/ent/misc/item_capsule/Item_capsule_023.png" type="Texture" id=26]
+[ext_resource path="res://res/img/ent/misc/item_capsule/Item_capsule_103.png" type="Texture" id=27]
+[ext_resource path="res://res/img/ent/misc/item_capsule/Item_capsule_113.png" type="Texture" id=28]
+[ext_resource path="res://res/img/ent/misc/item_capsule/Item_capsule_119.png" type="Texture" id=29]
+[ext_resource path="res://res/img/ent/misc/item_capsule/Item_capsule_110.png" type="Texture" id=30]
+[ext_resource path="res://res/img/ent/misc/item_capsule/Item_capsule_097.png" type="Texture" id=31]
+[ext_resource path="res://res/img/ent/misc/item_capsule/Item_capsule_104.png" type="Texture" id=32]
+[ext_resource path="res://res/img/ent/misc/item_capsule/Item_capsule_107.png" type="Texture" id=33]
+[ext_resource path="res://res/img/ent/misc/item_capsule/Item_capsule_108.png" type="Texture" id=34]
+[ext_resource path="res://res/img/ent/misc/item_capsule/Item_capsule_059.png" type="Texture" id=35]
+[ext_resource path="res://res/img/ent/misc/item_capsule/Item_capsule_070.png" type="Texture" id=36]
+[ext_resource path="res://res/img/ent/misc/item_capsule/Item_capsule_084.png" type="Texture" id=37]
+[ext_resource path="res://res/img/ent/misc/item_capsule/Item_capsule_061.png" type="Texture" id=38]
+[ext_resource path="res://res/img/ent/misc/item_capsule/Item_capsule_048.png" type="Texture" id=39]
+[ext_resource path="res://res/img/ent/misc/item_capsule/Item_capsule_068.png" type="Texture" id=40]
+[ext_resource path="res://res/img/ent/misc/item_capsule/Item_capsule_081.png" type="Texture" id=41]
+[ext_resource path="res://res/img/ent/misc/item_capsule/Item_capsule_046.png" type="Texture" id=42]
+[ext_resource path="res://res/img/ent/misc/item_capsule/Item_capsule_042.png" type="Texture" id=43]
+[ext_resource path="res://res/img/ent/misc/item_capsule/Item_capsule_043.png" type="Texture" id=44]
+[ext_resource path="res://res/img/ent/misc/item_capsule/Item_capsule_095.png" type="Texture" id=45]
+[ext_resource path="res://res/img/ent/misc/item_capsule/Item_capsule_089.png" type="Texture" id=46]
+[ext_resource path="res://res/img/ent/misc/item_capsule/Item_capsule_088.png" type="Texture" id=47]
+[ext_resource path="res://res/img/ent/misc/item_capsule/Item_capsule_092.png" type="Texture" id=48]
+[ext_resource path="res://res/img/ent/misc/item_capsule/Item_capsule_077.png" type="Texture" id=49]
+[ext_resource path="res://res/img/ent/misc/item_capsule/Item_capsule_109.png" type="Texture" id=50]
+[ext_resource path="res://res/img/ent/misc/item_capsule/Item_capsule_064.png" type="Texture" id=51]
+[ext_resource path="res://res/img/ent/misc/item_capsule/Item_capsule_079.png" type="Texture" id=52]
+[ext_resource path="res://res/img/ent/misc/item_capsule/Item_capsule_066.png" type="Texture" id=53]
+[ext_resource path="res://res/img/ent/misc/item_capsule/Item_capsule_091.png" type="Texture" id=54]
+[ext_resource path="res://res/img/ent/misc/item_capsule/Item_capsule_029.png" type="Texture" id=55]
+[ext_resource path="res://res/img/ent/misc/item_capsule/Item_capsule_017.png" type="Texture" id=56]
+[ext_resource path="res://res/img/ent/misc/item_capsule/Item_capsule_038.png" type="Texture" id=57]
+[ext_resource path="res://res/img/ent/misc/item_capsule/Item_capsule_049.png" type="Texture" id=58]
+[ext_resource path="res://res/img/ent/misc/item_capsule/Item_capsule_065.png" type="Texture" id=59]
+[ext_resource path="res://res/img/ent/misc/item_capsule/Item_capsule_073.png" type="Texture" id=60]
+[ext_resource path="res://res/img/ent/misc/item_capsule/Item_capsule_045.png" type="Texture" id=61]
+[ext_resource path="res://res/img/ent/misc/item_capsule/Item_capsule_082.png" type="Texture" id=62]
+[ext_resource path="res://res/img/ent/misc/item_capsule/Item_capsule_078.png" type="Texture" id=63]
+[ext_resource path="res://res/img/ent/misc/item_capsule/Item_capsule_099.png" type="Texture" id=64]
+[ext_resource path="res://res/img/ent/misc/item_capsule/Item_capsule_086.png" type="Texture" id=65]
+[ext_resource path="res://res/img/ent/misc/item_capsule/Item_capsule_083.png" type="Texture" id=66]
+[ext_resource path="res://res/img/ent/misc/item_capsule/Item_capsule_022.png" type="Texture" id=67]
+[ext_resource path="res://res/img/ent/misc/item_capsule/Item_capsule_013.png" type="Texture" id=68]
+[ext_resource path="res://res/img/ent/misc/item_capsule/Item_capsule_028.png" type="Texture" id=69]
+[ext_resource path="res://res/img/ent/misc/item_capsule/Item_capsule_034.png" type="Texture" id=70]
+[ext_resource path="res://res/img/ent/misc/item_capsule/Item_capsule_009.png" type="Texture" id=71]
+[ext_resource path="res://res/img/ent/misc/item_capsule/Item_capsule_018.png" type="Texture" id=72]
+[ext_resource path="res://res/img/ent/misc/item_capsule/Item_capsule_021.png" type="Texture" id=73]
+[ext_resource path="res://res/img/ent/misc/item_capsule/Item_capsule_014.png" type="Texture" id=74]
+[ext_resource path="res://res/img/ent/misc/item_capsule/Item_capsule_015.png" type="Texture" id=75]
+[ext_resource path="res://res/img/ent/misc/item_capsule/Item_capsule_016.png" type="Texture" id=76]
+[ext_resource path="res://res/img/ent/misc/item_capsule/Item_capsule_019.png" type="Texture" id=77]
+[ext_resource path="res://res/img/ent/misc/item_capsule/Item_capsule_024.png" type="Texture" id=78]
+[ext_resource path="res://res/img/ent/misc/item_capsule/Item_capsule_026.png" type="Texture" id=79]
+[ext_resource path="res://res/img/ent/misc/item_capsule/Item_capsule_020.png" type="Texture" id=80]
+[ext_resource path="res://res/img/ent/misc/item_capsule/Item_capsule_027.png" type="Texture" id=81]
+[ext_resource path="res://res/img/ent/misc/item_capsule/Item_capsule_006.png" type="Texture" id=82]
+[ext_resource path="res://res/img/ent/misc/item_capsule/Item_capsule_067.png" type="Texture" id=83]
+[ext_resource path="res://res/img/ent/misc/item_capsule/Item_capsule_057.png" type="Texture" id=84]
+[ext_resource path="res://res/img/ent/misc/item_capsule/Item_capsule_076.png" type="Texture" id=85]
+[ext_resource path="res://res/img/ent/misc/item_capsule/Item_capsule_055.png" type="Texture" id=86]
+[ext_resource path="res://res/img/ent/misc/item_capsule/Item_capsule_050.png" type="Texture" id=87]
+[ext_resource path="res://res/img/ent/misc/item_capsule/Item_capsule_052.png" type="Texture" id=88]
+[ext_resource path="res://res/img/ent/misc/item_capsule/Item_capsule_087.png" type="Texture" id=89]
+[ext_resource path="res://res/img/ent/misc/item_capsule/Item_capsule_080.png" type="Texture" id=90]
+[ext_resource path="res://res/img/ent/misc/item_capsule/Item_capsule_012.png" type="Texture" id=91]
+[ext_resource path="res://res/img/ent/misc/item_capsule/Item_capsule_090.png" type="Texture" id=92]
+[ext_resource path="res://res/img/ent/misc/item_capsule/Item_capsule_069.png" type="Texture" id=93]
+[ext_resource path="res://res/img/ent/misc/item_capsule/Item_capsule_062.png" type="Texture" id=94]
+[ext_resource path="res://res/img/ent/misc/item_capsule/Item_capsule_039.png" type="Texture" id=95]
+[ext_resource path="res://src/ent/Item_capsule.gd" type="Script" id=96]
+[ext_resource path="res://res/img/ent/misc/item_capsule/Item_capsule_085.png" type="Texture" id=97]
+[ext_resource path="res://res/img/ent/misc/item_capsule/Item_capsule_030.png" type="Texture" id=98]
+[ext_resource path="res://res/img/ent/misc/item_capsule/Item_capsule_033.png" type="Texture" id=99]
+[ext_resource path="res://res/img/ent/misc/item_capsule/Item_capsule_036.png" type="Texture" id=100]
+[ext_resource path="res://res/img/ent/misc/item_capsule/Item_capsule_008.png" type="Texture" id=101]
+[ext_resource path="res://res/img/ent/misc/item_capsule/Item_capsule_035.png" type="Texture" id=102]
+[ext_resource path="res://res/img/ent/misc/item_capsule/Item_capsule_032.png" type="Texture" id=103]
+[ext_resource path="res://res/img/ent/misc/item_capsule/Item_capsule_074.png" type="Texture" id=104]
+[ext_resource path="res://res/img/ent/misc/item_capsule/Item_capsule_075.png" type="Texture" id=105]
+[ext_resource path="res://res/img/ent/misc/item_capsule/Item_capsule_056.png" type="Texture" id=106]
+[ext_resource path="res://res/img/ent/misc/item_capsule/Item_capsule_004.png" type="Texture" id=107]
+[ext_resource path="res://res/img/ent/misc/item_capsule/Item_capsule_003.png" type="Texture" id=108]
+[ext_resource path="res://res/img/ent/misc/item_capsule/Item_capsule_000.png" type="Texture" id=109]
+[ext_resource path="res://res/img/ent/misc/item_capsule/Item_capsule_002.png" type="Texture" id=110]
+[ext_resource path="res://res/img/ent/misc/item_capsule/Item_capsule_005.png" type="Texture" id=111]
+[ext_resource path="res://res/img/ent/misc/item_capsule/Item_capsule_001.png" type="Texture" id=112]
+[ext_resource path="res://res/img/ent/misc/item_capsule/Item_capsule_058.png" type="Texture" id=113]
+[ext_resource path="res://res/img/ent/misc/item_capsule/Item_capsule_051.png" type="Texture" id=114]
+[ext_resource path="res://res/img/ent/misc/item_capsule/Item_capsule_011.png" type="Texture" id=115]
+[ext_resource path="res://res/img/ent/misc/item_capsule/Item_capsule_054.png" type="Texture" id=116]
+[ext_resource path="res://res/img/ent/misc/item_capsule/Item_capsule_053.png" type="Texture" id=117]
+[ext_resource path="res://res/img/ent/misc/item_capsule/Item_capsule_040.png" type="Texture" id=118]
+[ext_resource path="res://res/img/ent/misc/item_capsule/Item_capsule_063.png" type="Texture" id=119]
+[ext_resource path="res://res/img/ent/misc/item_capsule/Item_capsule_041.png" type="Texture" id=120]
+[ext_resource path="res://res/img/ent/misc/item_capsule/Item_capsule_025.png" type="Texture" id=121]
+
+[sub_resource type="SpriteFrames" id=55]
+animations = [ {
+"frames": [ ExtResource( 109 ), ExtResource( 112 ), ExtResource( 110 ), ExtResource( 108 ), ExtResource( 107 ) ],
+"loop": false,
+"name": "Active",
+"speed": 0.0
+}, {
+"frames": [ ExtResource( 109 ), ExtResource( 112 ), ExtResource( 110 ), ExtResource( 108 ), ExtResource( 107 ), ExtResource( 111 ), ExtResource( 82 ), ExtResource( 25 ), ExtResource( 101 ), ExtResource( 71 ), ExtResource( 3 ), ExtResource( 115 ), ExtResource( 91 ), ExtResource( 68 ), ExtResource( 74 ), ExtResource( 75 ), ExtResource( 76 ), ExtResource( 56 ), ExtResource( 72 ), ExtResource( 77 ), ExtResource( 80 ), ExtResource( 73 ), ExtResource( 67 ), ExtResource( 26 ), ExtResource( 78 ), ExtResource( 121 ), ExtResource( 79 ), ExtResource( 81 ), ExtResource( 69 ), ExtResource( 55 ), ExtResource( 98 ), ExtResource( 1 ), ExtResource( 103 ), ExtResource( 99 ), ExtResource( 70 ), ExtResource( 102 ), ExtResource( 100 ), ExtResource( 17 ), ExtResource( 57 ), ExtResource( 95 ), ExtResource( 118 ), ExtResource( 120 ), ExtResource( 43 ), ExtResource( 44 ), ExtResource( 10 ), ExtResource( 61 ), ExtResource( 42 ), ExtResource( 9 ), ExtResource( 39 ), ExtResource( 58 ), ExtResource( 87 ), ExtResource( 114 ), ExtResource( 88 ), ExtResource( 117 ), ExtResource( 116 ), ExtResource( 86 ), ExtResource( 106 ), ExtResource( 84 ), ExtResource( 113 ), ExtResource( 35 ), ExtResource( 12 ), ExtResource( 38 ), ExtResource( 94 ), ExtResource( 119 ), ExtResource( 51 ), ExtResource( 59 ), ExtResource( 53 ), ExtResource( 83 ), ExtResource( 40 ), ExtResource( 93 ), ExtResource( 36 ), ExtResource( 5 ), ExtResource( 11 ), ExtResource( 60 ), ExtResource( 104 ), ExtResource( 105 ), ExtResource( 85 ), ExtResource( 49 ), ExtResource( 63 ), ExtResource( 52 ), ExtResource( 90 ), ExtResource( 41 ), ExtResource( 62 ), ExtResource( 66 ), ExtResource( 37 ), ExtResource( 97 ), ExtResource( 65 ), ExtResource( 89 ), ExtResource( 47 ), ExtResource( 46 ), ExtResource( 92 ), ExtResource( 54 ), ExtResource( 48 ), ExtResource( 2 ), ExtResource( 19 ), ExtResource( 45 ), ExtResource( 6 ), ExtResource( 31 ), ExtResource( 13 ), ExtResource( 64 ), ExtResource( 20 ), ExtResource( 4 ), ExtResource( 22 ), ExtResource( 27 ), ExtResource( 32 ), ExtResource( 23 ), ExtResource( 21 ), ExtResource( 33 ), ExtResource( 34 ), ExtResource( 50 ), ExtResource( 30 ), ExtResource( 16 ), ExtResource( 8 ), ExtResource( 28 ), ExtResource( 18 ), ExtResource( 15 ), ExtResource( 7 ), ExtResource( 14 ), ExtResource( 24 ), ExtResource( 29 ) ],
+"loop": true,
+"name": "Generate_item",
+"speed": 12.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=56]
+extents = Vector2( 16, 31.5 )
+
+[sub_resource type="RectangleShape2D" id=57]
+extents = Vector2( 27, 2.5 )
+
+[node name="Item_capsule" type="StaticBody2D"]
+position = Vector2( -368, 1536 )
+collision_layer = 64
+script = ExtResource( 96 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+show_behind_parent = true
+frames = SubResource( 55 )
+animation = "Active"
+frame = 4
+playing = true
+
+[node name="CollisionShape2D" type="CollisionPolygon2D" parent="."]
+position = Vector2( 0, 30 )
+polygon = PoolVector2Array( 17, 2, 15, 0, -15, 0, -17, 2, 16, 2 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+polygon = PoolVector2Array( -12, -28, -7, -28, -7, -29, 7, -29, 7, -28, 12, -28, 11.9128, -29, 16, -29, 16, -31, 11, -31, 11, -32, -11, -32, -11, -31, -16, -31, -16, -29, -12, -29 )
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
+position = Vector2( 0, 0.5 )
+shape = SubResource( 56 )
+
+[node name="Area2D" type="Area2D" parent="."]
+position = Vector2( 2, 0 )
+collision_layer = 64
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2( 0, 29.5 )
+shape = SubResource( 57 )
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 0.1
+one_shot = true
+
+[connection signal="frame_changed" from="AnimatedSprite" to="." method="_on_AnimatedSprite_frame_changed"]
+[connection signal="body_entered" from="Area2D" to="." method="_on_Area2D_body_entered"]
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]

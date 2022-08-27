@@ -1,8 +1,8 @@
 extends Control
 
 export var screen = ""
-export var text = """-$ Access Jupiter station observatory logs ETime Feb 14, 2589
-3:04 Jupiter station observatory log 01.08.2589.3:04: Unidetentified 
+export var text = """
+-$ Access Jupiter station observatory logs ETime Feb 14, 2589 3:04 Jupiter station observatory log 01.08.2589.3:04: Unidetentified 
 celestial body detected 5 AU from Jupiter station.
 
 Danger level: Low
@@ -20,7 +20,7 @@ func _text():
 	$Label.text = text.left(x)
 	screen = text.left(x)
 	
-	if x == 167:
+	if x == len(text):
 		# TODO: Play animation scroll up
 		pass
 	
