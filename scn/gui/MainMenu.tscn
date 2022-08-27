@@ -1,0 +1,101 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://res/img/gui/Tritium logo-2.png.png" type="Texture" id=1]
+[ext_resource path="res://res/mus/Tritium_2.mp3" type="AudioStream" id=2]
+[ext_resource path="res://src/gui/Main_menu_music.gd" type="Script" id=3]
+[ext_resource path="res://src/gui/obj/PlayButton.gd" type="Script" id=4]
+[ext_resource path="res://res/fnt/tritium.ttf" type="DynamicFontData" id=5]
+
+[sub_resource type="DynamicFont" id=8]
+font_data = ExtResource( 5 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 32
+outline_color = Color( 0, 0, 0, 1 )
+use_mipmaps = true
+font_data = ExtResource( 5 )
+
+[sub_resource type="DynamicFont" id=4]
+size = 64
+outline_color = Color( 0, 0, 0, 1 )
+use_mipmaps = true
+font_data = ExtResource( 5 )
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_right = 1044.0
+margin_bottom = 616.0
+
+[node name="TextureRect" type="TextureRect" parent="."]
+margin_left = 211.428
+margin_top = 1.88776
+margin_right = 339.428
+margin_bottom = 129.888
+rect_scale = Vector2( 4.94327, 4.72121 )
+texture = ExtResource( 1 )
+stretch_mode = 3
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="Button" parent="."]
+margin_left = 457.996
+margin_top = 375.466
+margin_right = 524.996
+margin_bottom = 440.466
+rect_scale = Vector2( 2.12, 0.64 )
+custom_fonts/font = SubResource( 8 )
+flat = true
+script = ExtResource( 4 )
+
+[node name="Play" type="Label" parent="."]
+margin_left = 459.0
+margin_top = 384.0
+margin_right = 603.0
+margin_bottom = 420.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 2 )
+text = "play"
+
+[node name="Play2" type="Label" parent="Play"]
+margin_top = -2.0
+margin_right = 144.0
+margin_bottom = 34.0
+custom_colors/font_color = Color( 0, 1, 1, 1 )
+custom_fonts/font = SubResource( 2 )
+text = "Play"
+uppercase = true
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Tritium" type="Label" parent="."]
+margin_left = 278.0
+margin_top = 276.0
+margin_right = 782.0
+margin_bottom = 348.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 4 )
+text = "Tritium"
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Label3" type="Label" parent="Tritium"]
+margin_top = -4.0
+margin_right = 504.0
+margin_bottom = 68.0
+custom_colors/font_color = Color( 0, 1, 1, 1 )
+custom_fonts/font = SubResource( 4 )
+text = "Tritium"
+uppercase = true
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 2 )
+pitch_scale = 1.5
+script = ExtResource( 3 )
+
+[connection signal="pressed" from="Button" to="Button" method="_on_Button_pressed"]
