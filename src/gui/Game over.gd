@@ -1,6 +1,6 @@
 extends Control
 
-export var level =  preload("res://Assets/Levels/Level 1.tscn")
+export var level =  preload("res://scn/lvl/Level 1.tscn")
 export var x = 250
 
 func _process(_delta):
