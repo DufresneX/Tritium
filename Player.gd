@@ -39,10 +39,7 @@ func _ready():
 	$Anim_Parts/Right_arm.play("Beam in", true)
 	$Anim_Parts/Right_leg.play("Beam in", true)
 
-func _physics_process(delta): 
-
-#Movement (L/R)
-
+func _physics_process(_delta):
 	if Input.is_action_pressed("Right"):
 		if saving == 0:
 			dir = -500
@@ -56,10 +53,13 @@ func _physics_process(delta):
 			
 			$Anim_Parts/Spark_anim.offset.x = 27
 			$Anim_Parts/Spark_anim.flip_h = false
+			
 			if velocity.x < max_speed + 1:
 				velocity.x = velocity.x + max_speed / (slipperyness / 2)
+			
 			else:
 				 velocity.x = max_speed
+	
 	elif Input.is_action_pressed("Left"):
 		if saving == 0:
 			dir = 500
@@ -73,44 +73,60 @@ func _physics_process(delta):
 			
 			$Anim_Parts/Spark_anim.offset.x = -27
 			$Anim_Parts/Spark_anim.flip_h = true
+			
 			if velocity.x > - max_speed - 1:
 				velocity.x = velocity.x - max_speed / (slipperyness / 2)
+			
 			else:
 				velocity.x = - max_speed
+	
 	else:
 		if velocity.x > 0:
 			velocity.x = velocity.x - max_speed / slipperyness
+			
 			if velocity.x < 0:
 				velocity.x = 0
+		
 		elif velocity.x < 0:
+			
 			velocity.x = velocity.x + max_speed / slipperyness
+			
 			if velocity.x > 0:
 				velocity.x = 0
 
-#Animations
-	#Face camera
+	# Animations
+	# ----------
+	
+	# Face camera
 	if saving == 1:
 		$Anim_Parts/Body.play("Face forward")
 		$Anim_Parts/Head.play("Face forward")
+		
 		if not Input.is_action_pressed("Shoot"):
 			$Anim_Parts/Left_Arm.play("Face forward")
+		
 		$Anim_Parts/Left_leg.play("Face forward")
 		$Anim_Parts/Right_arm.play("Face forward")
 		$Anim_Parts/Right_leg.play("Face forward")
-	#Run
+	
+	# Run
 	elif Input.is_action_pressed("Left") and is_on_floor() or Input.is_action_pressed("Right") and is_on_floor():
 		$Anim_Parts/Right_leg.play("Run")
 		$Anim_Parts/Right_arm.play("Run")
 		$Anim_Parts/Left_leg.play("Run")
-		if not Input.is_action_pressed("Shoot"):
+		
+		if !Input.is_action_pressed("Shoot"):
 			$Anim_Parts/Left_Arm.play("Run")
+	
 	#Jump
-	elif not is_on_floor() and not is_on_wall():
+	elif !is_on_floor() and !is_on_wall():
 		$Anim_Parts/Right_leg.play("Jump")
 		$Anim_Parts/Right_arm.play("Jump")
 		$Anim_Parts/Left_leg.play("Jump")
-		if not Input.is_action_pressed("Shoot"):
+		
+		if !Input.is_action_pressed("Shoot"):
 			$Anim_Parts/Left_Arm.play("Jump")
+	
 	else:
 		$Anim_Parts/Body.play("Idle")
 		$Anim_Parts/Head.play("Idle")
@@ -119,32 +135,28 @@ func _physics_process(delta):
 		$Anim_Parts/Left_leg.play("Idle")
 		if not Input.is_action_pressed("Shoot"):
 			$Anim_Parts/Left_Arm.play("Idle")
-	
 		
-		# make head and body face in the right direction when wall jumping
+		# Make the head head and body face in the right direction while wall jumping
 		if dir == -500:
 			$Anim_Parts/Body.flip_h = true
 			$Anim_Parts/Head.flip_h = true
+		
 		elif dir == 500:
 			$Anim_Parts/Body.flip_h = false
 			$Anim_Parts/Head.flip_h = false
-		
-		
-#Jump animation
-		
 
-#Movement(Up)
-
+	# Jump animation / Up movement
 	if Input.is_action_just_pressed("Up") and is_on_floor() or Input.is_action_just_pressed("Up") and is_on_wall():
 		if saving == 0: velocity.y = JUMP_HIGHT
 		
-		#Wall jump
+		# Wall jump
 		
-		if Input.is_action_just_pressed("Up") and is_on_wall() and not is_on_floor():
+		if Input.is_action_just_pressed("Up") and is_on_wall() and !is_on_floor():
 			velocity.x = dir
 	
-	if is_on_wall() and not is_on_floor() and not Input.is_action_just_pressed("Up"):
+	if is_on_wall() and !is_on_floor() and !Input.is_action_just_pressed("Up"):
 		velocity.y = 70
+		
 		$Anim_Parts/Spark_anim.play("Spark")
 		$Anim_Parts/Body.play("Wall slide")
 		$Anim_Parts/Head.play("Wall slide")
@@ -152,22 +164,20 @@ func _physics_process(delta):
 		$Anim_Parts/Left_leg.play("Wall slide")
 		$Anim_Parts/Right_arm.play("Wall slide")
 		$Anim_Parts/Right_leg.play("Wall slide")
+	
 	else:
 		$Anim_Parts/Spark_anim.play("Idle")
-		
-		
-#Shoot
+
+	# Shoot
 	if Input.is_action_pressed("Shoot"):
 		emit_signal("shoot", position.x, position.y, dir)
 		$Anim_Parts/Left_Arm.play("Shoot")
 		shoot()
-		
-		
-	
+
 	emit_signal("hpChange", hp)
 	emit_signal("lifeChange", lives)
 	
-	#check if in lava
+	# Check if in lava
 	if in_lava == 1: 
 		hp -= 0.25
 		velocity.y = velocity.y / 1.5
@@ -181,87 +191,88 @@ func _physics_process(delta):
 		if lives > 0:
 			emit_signal("died")
 			lives -= 1
+			
 			position.x = saveX
 			position.y = saveY
 			hp = 100
+		
 		else:
-			get_tree().change_scene("res://Game over.tscn")
+			var check_err = get_tree().change_scene("res://Game over.tscn")
+			
+			if check_err != 0:
+				print("An ERROR occured while changing scenes to \"res://Game over.tscn\" in Player.gd: ", check_err)
 	
 	velocity.y = velocity.y + GRAVITY
-	
-		
+
 	velocity = move_and_slide(velocity,Vector2.UP)
-	
 
-
-
-
-
-func _on_Area2D_body_entered(body):
+func _on_Area2D_body_entered(_body):
 	if lives > 0:
 		hp = 0
+	
 	else:
-		get_tree().change_scene("res://Game over.tscn")
+		var check_err = get_tree().change_scene("res://Game over.tscn")
+		
+		if check_err != 0:
+			print("An ERROR occured while changing scenes to \"res://Game over.tscn\" in Player.gd: ", check_err)
 
-
-
-func _on_Danger_checker_body_entered(body):
+func _on_Danger_checker_body_entered(_body):
 	in_lava = 1
-	
 
-
-func _on_Danger_checker_body_exited(body):
+func _on_Danger_checker_body_exited(_body):
 	in_lava = 0
-	
 
-
-func _on_Fluid_checker_body_entered(body):
-	velocity.y == 5000
-
+func _on_Fluid_checker_body_entered(_body):
+	velocity.y = 5000
 
 func _on_Savepoint_save(X, Y):
 	saveX = X
 	saveY = Y
+	
 	position.x = X
 	position.y = Y
+	
 	$Timer.start()
 	
 func _on_Timer_timeout():
 	saving = 0
 
-
 func _on_No_save_button_up():
 	saving = 0
-
 
 func _on_Savepoint_prep_for_save(X, Y):
 	saving = 1
 	velocity.x = 0
 	velocity.y = 0
+	
 	position.x = X
 	position.y = Y
-	
+
 func shoot():
 	if bullet_timer == 0 and saving == 0:
 		bullet_timer = 1
+		
 		if Input.is_action_just_released("Shoot") or weapon_mode == "rapid":
 			var pb = BULLET.instance()
+			
 			get_parent().add_child(pb)
+			
 			pb.position.x = position.x - (dir/50)
 			pb.position.y = position.y - 10
+			
 			pb.velocity.x = - dir
+			
 			if weapon_mode == "rapid":
 				$Bullet_shot.start(recharge_time)
+			
 			elif weapon_mode == "charge":
 				$Bullet_charge.start(1)
-	
-
 
 func _on_Bullet_shot_timeout():
 	bullet_timer = 0
 
-
 func _on_Bullet_charge_timeout():
 	bullet_timer = 0
+	
 	if charge_level < max_charge_level:
 		charge_level += 1

@@ -12,15 +12,15 @@
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
-"frames": [ ExtResource( 7 ), ExtResource( 5 ), ExtResource( 8 ), ExtResource( 2 ), ExtResource( 1 ), ExtResource( 3 ), ExtResource( 6 ), ExtResource( 9 ) ],
-"loop": true,
-"name": "Walk",
-"speed": 9.0
-}, {
 "frames": [ ExtResource( 4 ) ],
 "loop": false,
 "name": "Idle",
 "speed": 0.0
+}, {
+"frames": [ ExtResource( 7 ), ExtResource( 5 ), ExtResource( 8 ), ExtResource( 2 ), ExtResource( 1 ), ExtResource( 3 ), ExtResource( 6 ), ExtResource( 9 ) ],
+"loop": true,
+"name": "Walk",
+"speed": 9.0
 } ]
 
 [sub_resource type="RectangleShape2D" id=2]
@@ -31,7 +31,7 @@ extents = Vector2( 10, 31 )
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 frames = SubResource( 1 )
 animation = "Walk"
-frame = 1
+frame = 7
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
