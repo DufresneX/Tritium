@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Tritium_2.mp3-4ce403ef42bdf5013f482004c290797c.mp3str"
+
+[deps]
+
+source_file="res://res/mus/Tritium_2.mp3"
+dest_files=[ "res://.import/Tritium_2.mp3-4ce403ef42bdf5013f482004c290797c.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

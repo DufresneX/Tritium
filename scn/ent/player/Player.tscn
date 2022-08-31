@@ -1,0 +1,522 @@
+[gd_scene load_steps=221 format=2]
+
+[ext_resource path="res://res/img/ent/player/frames/Body_PlayerFrame_18.png" type="Texture" id=1]
+[ext_resource path="res://src/ent/player/Player.gd" type="Script" id=2]
+[ext_resource path="res://res/img/particles/spark/Spark_01.png" type="Texture" id=3]
+[ext_resource path="res://res/img/particles/spark/Spark_05.png" type="Texture" id=4]
+[ext_resource path="res://res/img/particles/spark/Spark_04.png" type="Texture" id=5]
+[ext_resource path="res://res/img/particles/spark/Spark_02.png" type="Texture" id=6]
+[ext_resource path="res://res/img/ent/player/frames/Head_PlayerFrame_01.png" type="Texture" id=7]
+[ext_resource path="res://res/img/particles/spark/Spark_16.png" type="Texture" id=8]
+[ext_resource path="res://res/img/particles/spark/Spark_07.png" type="Texture" id=9]
+[ext_resource path="res://res/img/ent/player/frames/Left arm_PlayerFrame_01.png" type="Texture" id=10]
+[ext_resource path="res://res/img/particles/spark/Spark_06.png" type="Texture" id=11]
+[ext_resource path="res://res/img/particles/spark/Spark_12.png" type="Texture" id=12]
+[ext_resource path="res://res/img/particles/spark/Spark_09.png" type="Texture" id=13]
+[ext_resource path="res://res/img/particles/spark/Spark_14.png" type="Texture" id=14]
+[ext_resource path="res://res/img/particles/spark/Spark_03.png" type="Texture" id=15]
+[ext_resource path="res://res/img/particles/spark/Spark_10.png" type="Texture" id=16]
+[ext_resource path="res://res/img/particles/spark/Spark_11.png" type="Texture" id=17]
+[ext_resource path="res://res/img/particles/spark/Spark_13.png" type="Texture" id=18]
+[ext_resource path="res://res/img/ent/player/frames/Left leg_PlayerFrame_04.png" type="Texture" id=19]
+[ext_resource path="res://res/img/particles/spark/Spark_15.png" type="Texture" id=20]
+[ext_resource path="res://res/img/ent/player/frames/Left leg_PlayerFrame_19.png" type="Texture" id=21]
+[ext_resource path="res://res/img/particles/spark/Spark_08.png" type="Texture" id=22]
+[ext_resource path="res://res/img/ent/player/frames/Left leg_PlayerFrame_08.png" type="Texture" id=23]
+[ext_resource path="res://res/img/ent/player/frames/Left leg_PlayerFrame_18.png" type="Texture" id=24]
+[ext_resource path="res://res/img/ent/player/frames/Left leg_PlayerFrame_13.png" type="Texture" id=25]
+[ext_resource path="res://res/img/particles/spark/Spark_00.png" type="Texture" id=26]
+[ext_resource path="res://res/img/ent/player/frames/Left leg_PlayerFrame_03.png" type="Texture" id=27]
+[ext_resource path="res://res/img/ent/player/frames/Left leg_PlayerFrame_05.png" type="Texture" id=28]
+[ext_resource path="res://res/img/ent/player/frames/Left leg_PlayerFrame_06.png" type="Texture" id=29]
+[ext_resource path="res://res/img/ent/player/frames/Left leg_PlayerFrame_21.png" type="Texture" id=30]
+[ext_resource path="res://res/img/ent/player/frames/Left leg_PlayerFrame_07.png" type="Texture" id=31]
+[ext_resource path="res://res/img/ent/player/frames/Left arm_PlayerFrame_06.png" type="Texture" id=32]
+[ext_resource path="res://res/img/ent/player/frames/Left leg_PlayerFrame_20.png" type="Texture" id=33]
+[ext_resource path="res://res/img/ent/player/frames/Left leg_PlayerFrame_09.png" type="Texture" id=34]
+[ext_resource path="res://res/img/ent/player/frames/Left leg_PlayerFrame_16.png" type="Texture" id=35]
+[ext_resource path="res://res/img/ent/player/frames/Left arm_PlayerFrame_22.png" type="Texture" id=36]
+[ext_resource path="res://res/img/ent/player/frames/Body_PlayerFrame_01.png" type="Texture" id=37]
+[ext_resource path="res://res/img/ent/player/frames/Left leg_PlayerFrame_15.png" type="Texture" id=38]
+[ext_resource path="res://res/img/ent/player/frames/Left leg_PlayerFrame_12.png" type="Texture" id=39]
+[ext_resource path="res://res/img/ent/player/frames/Left arm_PlayerFrame_19.png" type="Texture" id=40]
+[ext_resource path="res://res/img/ent/player/frames/Left arm_PlayerFrame_05.png" type="Texture" id=41]
+[ext_resource path="res://res/img/ent/player/frames/Left arm_PlayerFrame_20.png" type="Texture" id=42]
+[ext_resource path="res://res/img/ent/player/frames/Right arm_PlayerFrame_01.png" type="Texture" id=43]
+[ext_resource path="res://res/img/ent/player/frames/Left leg_PlayerFrame_01.png" type="Texture" id=44]
+[ext_resource path="res://res/img/ent/player/frames/Left arm_PlayerFrame_14.png" type="Texture" id=45]
+[ext_resource path="res://res/img/ent/player/frames/Left arm_PlayerFrame_12.png" type="Texture" id=46]
+[ext_resource path="res://res/img/ent/player/frames/Left leg_PlayerFrame_14.png" type="Texture" id=47]
+[ext_resource path="res://res/img/ent/player/frames/Right leg_PlayerFrame_01.png" type="Texture" id=48]
+[ext_resource path="res://res/img/ent/player/frames/Left arm_PlayerFrame_11.png" type="Texture" id=49]
+[ext_resource path="res://res/img/ent/player/frames/Left leg_PlayerFrame_02.png" type="Texture" id=50]
+[ext_resource path="res://res/img/ent/player/frames/Left arm_PlayerFrame_17.png" type="Texture" id=51]
+[ext_resource path="res://res/img/ent/player/frames/Left arm_PlayerFrame_09.png" type="Texture" id=52]
+[ext_resource path="res://res/img/ent/player/frames/Left arm_PlayerFrame_15.png" type="Texture" id=53]
+[ext_resource path="res://res/img/ent/player/frames/Left arm_PlayerFrame_16.png" type="Texture" id=54]
+[ext_resource path="res://res/img/ent/player/frames/Left arm_PlayerFrame_13.png" type="Texture" id=55]
+[ext_resource path="res://res/img/ent/player/frames/Left leg_PlayerFrame_22.png" type="Texture" id=56]
+[ext_resource path="res://res/img/ent/player/frames/Left leg_PlayerFrame_17.png" type="Texture" id=57]
+[ext_resource path="res://res/img/ent/player/frames/Left leg_PlayerFrame_11.png" type="Texture" id=58]
+[ext_resource path="res://res/img/ent/player/frames/Left arm_PlayerFrame_03.png" type="Texture" id=59]
+[ext_resource path="res://res/img/ent/player/frames/Left leg_PlayerFrame_10.png" type="Texture" id=60]
+[ext_resource path="res://res/img/ent/player/frames/Left arm_PlayerFrame_04.png" type="Texture" id=61]
+[ext_resource path="res://res/img/ent/player/frames/Left arm_PlayerFrame_10.png" type="Texture" id=62]
+[ext_resource path="res://res/img/ent/player/frames/Left arm_PlayerFrame_18.png" type="Texture" id=63]
+[ext_resource path="res://res/img/ent/player/frames/Left arm_PlayerFrame_21.png" type="Texture" id=64]
+[ext_resource path="res://res/img/ent/player/frames/Left arm_PlayerFrame_02.png" type="Texture" id=65]
+[ext_resource path="res://res/img/ent/player/frames/Left arm_PlayerFrame_08.png" type="Texture" id=66]
+[ext_resource path="res://res/img/ent/player/frames/Left arm_PlayerFrame_07.png" type="Texture" id=67]
+[ext_resource path="res://res/img/ent/player/frames/Right arm_PlayerFrame_05.png" type="Texture" id=68]
+[ext_resource path="res://res/img/ent/player/frames/Body_PlayerFrame_16.png" type="Texture" id=69]
+[ext_resource path="res://res/img/ent/player/frames/Body_PlayerFrame_10.png" type="Texture" id=70]
+[ext_resource path="res://res/img/ent/player/frames/Right arm_PlayerFrame_08.png" type="Texture" id=71]
+[ext_resource path="res://res/img/ent/player/frames/Right leg_PlayerFrame_07.png" type="Texture" id=72]
+[ext_resource path="res://res/img/ent/player/frames/Head_PlayerFrame_18.png" type="Texture" id=73]
+[ext_resource path="res://res/img/ent/player/frames/Head_PlayerFrame_19.png" type="Texture" id=74]
+[ext_resource path="res://res/img/ent/player/frames/Head_PlayerFrame_20.png" type="Texture" id=75]
+[ext_resource path="res://res/img/ent/player/frames/Head_PlayerFrame_21.png" type="Texture" id=76]
+[ext_resource path="res://res/img/ent/player/frames/Head_PlayerFrame_22.png" type="Texture" id=77]
+[ext_resource path="res://res/img/ent/player/frames/Right arm_PlayerFrame_04.png" type="Texture" id=78]
+[ext_resource path="res://res/img/ent/player/frames/Head_PlayerFrame_06.png" type="Texture" id=79]
+[ext_resource path="res://res/img/ent/player/frames/Right arm_PlayerFrame_06.png" type="Texture" id=80]
+[ext_resource path="res://res/img/ent/player/frames/Right arm_PlayerFrame_03.png" type="Texture" id=81]
+[ext_resource path="res://res/img/ent/player/frames/Body_PlayerFrame_20.png" type="Texture" id=82]
+[ext_resource path="res://res/img/ent/player/frames/Right leg_PlayerFrame_02.png" type="Texture" id=83]
+[ext_resource path="res://res/img/ent/player/frames/Head_PlayerFrame_05.png" type="Texture" id=84]
+[ext_resource path="res://res/img/ent/player/frames/Head_PlayerFrame_04.png" type="Texture" id=85]
+[ext_resource path="res://res/img/ent/player/frames/Right arm_PlayerFrame_02.png" type="Texture" id=86]
+[ext_resource path="res://res/img/ent/player/frames/Right arm_PlayerFrame_07.png" type="Texture" id=87]
+[ext_resource path="res://res/img/ent/player/frames/Head_PlayerFrame_08.png" type="Texture" id=88]
+[ext_resource path="res://res/img/ent/player/frames/Right arm_PlayerFrame_09.png" type="Texture" id=89]
+[ext_resource path="res://res/img/ent/player/frames/Body_PlayerFrame_05.png" type="Texture" id=90]
+[ext_resource path="res://res/img/ent/player/frames/Head_PlayerFrame_03.png" type="Texture" id=91]
+[ext_resource path="res://res/img/ent/player/frames/Right arm_PlayerFrame_10.png" type="Texture" id=92]
+[ext_resource path="res://res/img/ent/player/frames/Body_PlayerFrame_08.png" type="Texture" id=93]
+[ext_resource path="res://res/img/ent/player/frames/Body_PlayerFrame_13.png" type="Texture" id=94]
+[ext_resource path="res://res/img/ent/player/frames/Body_PlayerFrame_04.png" type="Texture" id=95]
+[ext_resource path="res://res/img/ent/player/frames/Body_PlayerFrame_09.png" type="Texture" id=96]
+[ext_resource path="res://res/img/ent/player/frames/Right leg_PlayerFrame_03.png" type="Texture" id=97]
+[ext_resource path="res://res/img/ent/player/frames/Body_PlayerFrame_15.png" type="Texture" id=98]
+[ext_resource path="res://res/img/ent/player/frames/Body_PlayerFrame_21.png" type="Texture" id=99]
+[ext_resource path="res://res/img/ent/player/frames/Right leg_PlayerFrame_05.png" type="Texture" id=100]
+[ext_resource path="res://res/img/ent/player/frames/Body_PlayerFrame_19.png" type="Texture" id=101]
+[ext_resource path="res://res/img/ent/player/frames/Right leg_PlayerFrame_06.png" type="Texture" id=102]
+[ext_resource path="res://res/img/ent/player/frames/Body_PlayerFrame_07.png" type="Texture" id=103]
+[ext_resource path="res://res/img/ent/player/frames/Body_PlayerFrame_06.png" type="Texture" id=104]
+[ext_resource path="res://res/img/ent/player/frames/Right leg_PlayerFrame_04.png" type="Texture" id=105]
+[ext_resource path="res://res/img/ent/player/frames/Body_PlayerFrame_03.png" type="Texture" id=106]
+[ext_resource path="res://res/img/ent/player/frames/Head_PlayerFrame_09.png" type="Texture" id=107]
+[ext_resource path="res://res/img/ent/player/frames/Right leg_PlayerFrame_08.png" type="Texture" id=108]
+[ext_resource path="res://res/img/ent/player/frames/Body_PlayerFrame_22.png" type="Texture" id=109]
+[ext_resource path="res://res/img/ent/player/frames/Head_PlayerFrame_07.png" type="Texture" id=110]
+[ext_resource path="res://res/img/ent/player/frames/Body_PlayerFrame_12.png" type="Texture" id=111]
+[ext_resource path="res://res/img/ent/player/frames/Body_PlayerFrame_14.png" type="Texture" id=112]
+[ext_resource path="res://res/img/ent/player/frames/Head_PlayerFrame_02.png" type="Texture" id=113]
+[ext_resource path="res://res/img/ent/player/frames/Body_PlayerFrame_02.png" type="Texture" id=114]
+[ext_resource path="res://res/img/ent/player/frames/Body_PlayerFrame_17.png" type="Texture" id=115]
+[ext_resource path="res://res/img/ent/player/frames/Head_PlayerFrame_10.png" type="Texture" id=116]
+[ext_resource path="res://res/img/ent/player/frames/Head_PlayerFrame_11.png" type="Texture" id=117]
+[ext_resource path="res://res/img/ent/player/frames/Head_PlayerFrame_12.png" type="Texture" id=118]
+[ext_resource path="res://res/img/ent/player/frames/Head_PlayerFrame_13.png" type="Texture" id=119]
+[ext_resource path="res://res/img/ent/player/frames/Head_PlayerFrame_14.png" type="Texture" id=120]
+[ext_resource path="res://res/img/ent/player/frames/Head_PlayerFrame_16.png" type="Texture" id=121]
+[ext_resource path="res://res/img/ent/player/frames/Head_PlayerFrame_17.png" type="Texture" id=122]
+[ext_resource path="res://res/img/ent/player/frames/Head_PlayerFrame_15.png" type="Texture" id=123]
+[ext_resource path="res://res/img/ent/player/frames/Body_PlayerFrame_11.png" type="Texture" id=124]
+[ext_resource path="res://res/img/ent/player/frames/Right leg_PlayerFrame_09.png" type="Texture" id=125]
+[ext_resource path="res://res/img/ent/player/frames/Right leg_PlayerFrame_10.png" type="Texture" id=126]
+[ext_resource path="res://res/img/ent/player/frames/Right leg_PlayerFrame_11.png" type="Texture" id=127]
+[ext_resource path="res://res/img/ent/player/frames/Right leg_PlayerFrame_12.png" type="Texture" id=128]
+[ext_resource path="res://res/img/ent/player/frames/Right leg_PlayerFrame_13.png" type="Texture" id=129]
+[ext_resource path="res://res/img/ent/player/frames/Right leg_PlayerFrame_14.png" type="Texture" id=130]
+[ext_resource path="res://res/img/ent/player/frames/Right leg_PlayerFrame_15.png" type="Texture" id=131]
+[ext_resource path="res://res/img/ent/player/frames/Right leg_PlayerFrame_16.png" type="Texture" id=132]
+[ext_resource path="res://res/img/ent/player/frames/Right leg_PlayerFrame_17.png" type="Texture" id=133]
+[ext_resource path="res://res/img/ent/player/frames/Right leg_PlayerFrame_19.png" type="Texture" id=134]
+[ext_resource path="res://res/img/ent/player/frames/Right leg_PlayerFrame_18.png" type="Texture" id=135]
+[ext_resource path="res://res/img/ent/player/frames/Right leg_PlayerFrame_20.png" type="Texture" id=136]
+[ext_resource path="res://res/img/ent/player/frames/Right leg_PlayerFrame_21.png" type="Texture" id=137]
+[ext_resource path="res://res/img/ent/player/frames/Right leg_PlayerFrame_22.png" type="Texture" id=138]
+[ext_resource path="res://res/img/ent/player/frames/Right arm_PlayerFrame_11.png" type="Texture" id=139]
+[ext_resource path="res://res/img/ent/player/frames/Right arm_PlayerFrame_12.png" type="Texture" id=140]
+[ext_resource path="res://res/img/ent/player/frames/Right arm_PlayerFrame_13.png" type="Texture" id=141]
+[ext_resource path="res://res/img/ent/player/frames/Right arm_PlayerFrame_14.png" type="Texture" id=142]
+[ext_resource path="res://res/img/ent/player/frames/Right arm_PlayerFrame_15.png" type="Texture" id=143]
+[ext_resource path="res://res/img/ent/player/frames/Right arm_PlayerFrame_16.png" type="Texture" id=144]
+[ext_resource path="res://res/img/ent/player/frames/Right arm_PlayerFrame_17.png" type="Texture" id=145]
+[ext_resource path="res://res/img/ent/player/frames/Right arm_PlayerFrame_18.png" type="Texture" id=146]
+[ext_resource path="res://res/img/ent/player/frames/Right arm_PlayerFrame_19.png" type="Texture" id=147]
+[ext_resource path="res://res/img/ent/player/frames/Right arm_PlayerFrame_20.png" type="Texture" id=148]
+[ext_resource path="res://res/img/ent/player/frames/Right arm_PlayerFrame_21.png" type="Texture" id=149]
+[ext_resource path="res://res/img/ent/player/frames/Right arm_PlayerFrame_22.png" type="Texture" id=150]
+[ext_resource path="res://res/img/ent/player/frames/Left arm_PlayerFrame_29.png" type="Texture" id=151]
+[ext_resource path="res://res/img/ent/player/frames/Left arm_PlayerFrame_32.png" type="Texture" id=152]
+[ext_resource path="res://res/img/ent/player/frames/Right arm_PlayerFrame_29.png" type="Texture" id=153]
+[ext_resource path="res://res/img/ent/player/frames/Right leg_PlayerFrame_31.png" type="Texture" id=154]
+[ext_resource path="res://res/img/ent/player/frames/Right leg_PlayerFrame_32.png" type="Texture" id=155]
+[ext_resource path="res://res/img/ent/player/frames/Left arm_PlayerFrame_33.png" type="Texture" id=156]
+[ext_resource path="res://res/img/ent/player/frames/Left arm_PlayerFrame_30.png" type="Texture" id=157]
+[ext_resource path="res://res/img/ent/player/frames/Left leg_PlayerFrame_30.png" type="Texture" id=158]
+[ext_resource path="res://res/img/ent/player/frames/Left arm_PlayerFrame_31.png" type="Texture" id=159]
+[ext_resource path="res://res/img/ent/player/frames/Right arm_PlayerFrame_31.png" type="Texture" id=160]
+[ext_resource path="res://res/img/ent/player/frames/Left leg_PlayerFrame_31.png" type="Texture" id=161]
+[ext_resource path="res://res/img/ent/player/frames/Right arm_PlayerFrame_30.png" type="Texture" id=162]
+[ext_resource path="res://res/img/ent/player/frames/Right leg_PlayerFrame_29.png" type="Texture" id=163]
+[ext_resource path="res://res/img/ent/player/frames/Left leg_PlayerFrame_33.png" type="Texture" id=164]
+[ext_resource path="res://res/img/ent/player/frames/Left leg_PlayerFrame_29.png" type="Texture" id=165]
+[ext_resource path="res://res/img/ent/player/frames/Left leg_PlayerFrame_32.png" type="Texture" id=166]
+[ext_resource path="res://res/img/ent/player/frames/Right leg_PlayerFrame_33.png" type="Texture" id=167]
+[ext_resource path="res://res/img/ent/player/frames/Right arm_PlayerFrame_33.png" type="Texture" id=168]
+[ext_resource path="res://res/img/ent/player/frames/Right arm_PlayerFrame_32.png" type="Texture" id=169]
+[ext_resource path="res://res/img/ent/player/frames/Left leg_PlayerFrame_24.png" type="Texture" id=170]
+[ext_resource path="res://res/img/ent/player/frames/Right leg_PlayerFrame_30.png" type="Texture" id=171]
+[ext_resource path="res://res/img/ent/player/frames/Left arm_PlayerFrame_28.png" type="Texture" id=172]
+[ext_resource path="res://res/img/ent/player/frames/Right arm_PlayerFrame_23.png" type="Texture" id=173]
+[ext_resource path="res://res/img/ent/player/frames/Right leg_PlayerFrame_24.png" type="Texture" id=174]
+[ext_resource path="res://res/img/ent/player/frames/Left arm_PlayerFrame_23.png" type="Texture" id=175]
+[ext_resource path="res://res/img/ent/player/frames/Left leg_PlayerFrame_28.png" type="Texture" id=176]
+[ext_resource path="res://res/img/ent/player/frames/Left arm_PlayerFrame_27.png" type="Texture" id=177]
+[ext_resource path="res://res/img/ent/player/frames/Left leg_PlayerFrame_27.png" type="Texture" id=178]
+[ext_resource path="res://res/img/ent/player/frames/Right arm_PlayerFrame_28.png" type="Texture" id=179]
+[ext_resource path="res://res/img/ent/player/frames/Left leg_PlayerFrame_26.png" type="Texture" id=180]
+[ext_resource path="res://res/img/ent/player/frames/Right leg_PlayerFrame_26.png" type="Texture" id=181]
+[ext_resource path="res://res/img/ent/player/frames/Right arm_PlayerFrame_25.png" type="Texture" id=182]
+[ext_resource path="res://res/img/ent/player/frames/Right leg_PlayerFrame_28.png" type="Texture" id=183]
+[ext_resource path="res://res/img/ent/player/frames/Right arm_PlayerFrame_24.png" type="Texture" id=184]
+[ext_resource path="res://res/img/ent/player/frames/Right arm_PlayerFrame_27.png" type="Texture" id=185]
+[ext_resource path="res://res/img/ent/player/frames/Right leg_PlayerFrame_27.png" type="Texture" id=186]
+[ext_resource path="res://res/img/ent/player/frames/Right leg_PlayerFrame_25.png" type="Texture" id=187]
+[ext_resource path="res://res/img/ent/player/frames/Right arm_PlayerFrame_26.png" type="Texture" id=188]
+[ext_resource path="res://res/img/ent/player/frames/Left leg_PlayerFrame_23.png" type="Texture" id=189]
+[ext_resource path="res://res/img/ent/player/frames/Left arm_PlayerFrame_24.png" type="Texture" id=190]
+[ext_resource path="res://res/img/ent/player/frames/Right leg_PlayerFrame_23.png" type="Texture" id=191]
+[ext_resource path="res://res/img/ent/player/frames/Left arm_PlayerFrame_26.png" type="Texture" id=192]
+[ext_resource path="res://res/img/ent/player/frames/Left arm_PlayerFrame_25.png" type="Texture" id=193]
+[ext_resource path="res://res/img/ent/player/frames/Left leg_PlayerFrame_25.png" type="Texture" id=194]
+[ext_resource path="res://res/img/ent/player/frames/Head_PlayerFrame_44.png" type="Texture" id=195]
+[ext_resource path="res://res/img/ent/player/frames/Right arm_PlayerFrame_44.png" type="Texture" id=196]
+[ext_resource path="res://res/img/ent/player/frames/Right leg_PlayerFrame_44.png" type="Texture" id=197]
+[ext_resource path="res://res/img/ent/player/frames/Left leg_PlayerFrame_44.png" type="Texture" id=198]
+[ext_resource path="res://res/img/ent/player/frames/Body_PlayerFrame_44.png" type="Texture" id=199]
+[ext_resource path="res://res/img/ent/player/frames/Left arm_PlayerFrame_44.png" type="Texture" id=200]
+[ext_resource path="res://res/img/ent/player/frames/Left arm_PlayerFrame_38.png" type="Texture" id=201]
+[ext_resource path="res://res/img/ent/player/frames/Right leg_PlayerFrame_45.png" type="Texture" id=202]
+[ext_resource path="res://res/img/ent/player/frames/Left arm_PlayerFrame_36.png" type="Texture" id=203]
+[ext_resource path="res://res/img/ent/player/frames/Left arm_PlayerFrame_37.png" type="Texture" id=204]
+[ext_resource path="res://res/img/ent/player/frames/Left leg_PlayerFrame_45.png" type="Texture" id=205]
+[ext_resource path="res://res/img/ent/player/frames/Head_PlayerFrame_45.png" type="Texture" id=206]
+[ext_resource path="res://res/img/ent/player/frames/Body_PlayerFrame_45.png" type="Texture" id=207]
+[ext_resource path="res://res/img/ent/player/frames/Right arm_PlayerFrame_45.png" type="Texture" id=208]
+[ext_resource path="res://res/img/ent/player/frames/Left arm_PlayerFrame_45.png" type="Texture" id=209]
+[ext_resource path="res://res/img/ent/player/frames/Left arm_PlayerFrame_35.png" type="Texture" id=210]
+[ext_resource path="res://res/img/ent/player/frames/Left arm_PlayerFrame_34.png" type="Texture" id=211]
+
+[sub_resource type="RectangleShape2D" id=9]
+extents = Vector2( 9.92787, 15.3507 )
+
+[sub_resource type="RectangleShape2D" id=31]
+
+[sub_resource type="SpriteFrames" id=11]
+animations = [ {
+"frames": [  ],
+"loop": false,
+"name": "Idle",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 26 ), ExtResource( 3 ), ExtResource( 6 ), ExtResource( 15 ), ExtResource( 5 ), ExtResource( 4 ), ExtResource( 11 ), ExtResource( 9 ), ExtResource( 22 ), ExtResource( 13 ), ExtResource( 16 ), ExtResource( 17 ), ExtResource( 12 ), ExtResource( 18 ), ExtResource( 14 ), ExtResource( 20 ), ExtResource( 8 ) ],
+"loop": true,
+"name": "Spark",
+"speed": 88.0
+} ]
+
+[sub_resource type="SpriteFrames" id=14]
+animations = [ {
+"frames": [ ExtResource( 86 ), ExtResource( 81 ), ExtResource( 78 ), ExtResource( 68 ), ExtResource( 80 ), ExtResource( 87 ), ExtResource( 71 ), ExtResource( 89 ), ExtResource( 92 ), ExtResource( 139 ), ExtResource( 140 ), ExtResource( 141 ), ExtResource( 142 ), ExtResource( 143 ), ExtResource( 144 ), ExtResource( 145 ), ExtResource( 146 ), ExtResource( 147 ), ExtResource( 148 ), ExtResource( 149 ), ExtResource( 150 ) ],
+"loop": false,
+"name": "Beam in",
+"speed": 20.0
+}, {
+"frames": [ ExtResource( 196 ) ],
+"loop": true,
+"name": "Face forward",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 43 ) ],
+"loop": true,
+"name": "Idle",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 173 ), ExtResource( 184 ), ExtResource( 182 ), ExtResource( 188 ), ExtResource( 185 ), ExtResource( 179 ) ],
+"loop": false,
+"name": "Jump",
+"speed": 20.0
+}, {
+"frames": [ ExtResource( 153 ), ExtResource( 162 ), ExtResource( 160 ), ExtResource( 169 ), ExtResource( 168 ), ExtResource( 169 ), ExtResource( 160 ), ExtResource( 162 ) ],
+"loop": true,
+"name": "Run",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 208 ) ],
+"loop": true,
+"name": "Wall slide",
+"speed": 5.0
+} ]
+
+[sub_resource type="SpriteFrames" id=13]
+animations = [ {
+"frames": [ ExtResource( 113 ), ExtResource( 91 ), ExtResource( 85 ), ExtResource( 84 ), ExtResource( 79 ), ExtResource( 110 ), ExtResource( 88 ), ExtResource( 107 ), ExtResource( 116 ), ExtResource( 117 ), ExtResource( 118 ), ExtResource( 119 ), ExtResource( 120 ), ExtResource( 123 ), ExtResource( 121 ), ExtResource( 122 ), ExtResource( 73 ), ExtResource( 74 ), ExtResource( 75 ), ExtResource( 76 ), ExtResource( 77 ) ],
+"loop": false,
+"name": "Beam in",
+"speed": 20.0
+}, {
+"frames": [ ExtResource( 195 ) ],
+"loop": true,
+"name": "Face forward",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 7 ) ],
+"loop": true,
+"name": "Idle",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 206 ) ],
+"loop": true,
+"name": "Wall slide",
+"speed": 5.0
+} ]
+
+[sub_resource type="SpriteFrames" id=17]
+animations = [ {
+"frames": [ ExtResource( 83 ), ExtResource( 97 ), ExtResource( 105 ), ExtResource( 100 ), ExtResource( 102 ), ExtResource( 72 ), ExtResource( 108 ), ExtResource( 125 ), ExtResource( 126 ), ExtResource( 127 ), ExtResource( 128 ), ExtResource( 129 ), ExtResource( 130 ), ExtResource( 131 ), ExtResource( 132 ), ExtResource( 133 ), ExtResource( 135 ), ExtResource( 134 ), ExtResource( 136 ), ExtResource( 137 ), ExtResource( 138 ) ],
+"loop": false,
+"name": "Beam in",
+"speed": 20.0
+}, {
+"frames": [ ExtResource( 197 ) ],
+"loop": true,
+"name": "Face forward",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 48 ) ],
+"loop": true,
+"name": "Idle",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 191 ), ExtResource( 174 ), ExtResource( 187 ), ExtResource( 181 ), ExtResource( 186 ), ExtResource( 183 ) ],
+"loop": false,
+"name": "Jump",
+"speed": 20.0
+}, {
+"frames": [ ExtResource( 163 ), ExtResource( 171 ), ExtResource( 154 ), ExtResource( 155 ), ExtResource( 167 ), ExtResource( 155 ), ExtResource( 154 ), ExtResource( 171 ), ExtResource( 158 ), ExtResource( 161 ), ExtResource( 166 ), ExtResource( 164 ) ],
+"loop": true,
+"name": "Run",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 202 ) ],
+"loop": true,
+"name": "Wall slide",
+"speed": 5.0
+} ]
+
+[sub_resource type="SpriteFrames" id=16]
+animations = [ {
+"frames": [ ExtResource( 114 ), ExtResource( 106 ), ExtResource( 95 ), ExtResource( 90 ), ExtResource( 104 ), ExtResource( 103 ), ExtResource( 93 ), ExtResource( 96 ), ExtResource( 70 ), ExtResource( 124 ), ExtResource( 111 ), ExtResource( 94 ), ExtResource( 112 ), ExtResource( 98 ), ExtResource( 69 ), ExtResource( 115 ), ExtResource( 1 ), ExtResource( 101 ), ExtResource( 82 ), ExtResource( 99 ), ExtResource( 109 ) ],
+"loop": false,
+"name": "Beam in",
+"speed": 20.0
+}, {
+"frames": [ ExtResource( 199 ) ],
+"loop": true,
+"name": "Face forward",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 37 ) ],
+"loop": true,
+"name": "Idle",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 207 ) ],
+"loop": true,
+"name": "Wall slide",
+"speed": 5.0
+} ]
+
+[sub_resource type="SpriteFrames" id=15]
+animations = [ {
+"frames": [ ExtResource( 50 ), ExtResource( 27 ), ExtResource( 19 ), ExtResource( 28 ), ExtResource( 29 ), ExtResource( 31 ), ExtResource( 23 ), ExtResource( 34 ), ExtResource( 60 ), ExtResource( 58 ), ExtResource( 39 ), ExtResource( 25 ), ExtResource( 47 ), ExtResource( 38 ), ExtResource( 35 ), ExtResource( 57 ), ExtResource( 24 ), ExtResource( 21 ), ExtResource( 33 ), ExtResource( 30 ), ExtResource( 56 ) ],
+"loop": false,
+"name": "Beam in",
+"speed": 20.0
+}, {
+"frames": [ ExtResource( 198 ) ],
+"loop": true,
+"name": "Face forward",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 44 ) ],
+"loop": true,
+"name": "Idle",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 189 ), ExtResource( 170 ), ExtResource( 194 ), ExtResource( 180 ), ExtResource( 178 ), ExtResource( 176 ) ],
+"loop": false,
+"name": "Jump",
+"speed": 20.0
+}, {
+"frames": [ ExtResource( 165 ), ExtResource( 158 ), ExtResource( 161 ), ExtResource( 166 ), ExtResource( 164 ), ExtResource( 166 ), ExtResource( 161 ), ExtResource( 158 ), ExtResource( 171 ), ExtResource( 154 ), ExtResource( 155 ), ExtResource( 167 ) ],
+"loop": true,
+"name": "Run",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 205 ) ],
+"loop": true,
+"name": "Wall slide",
+"speed": 5.0
+} ]
+
+[sub_resource type="SpriteFrames" id=12]
+animations = [ {
+"frames": [ ExtResource( 65 ), ExtResource( 59 ), ExtResource( 61 ), ExtResource( 41 ), ExtResource( 32 ), ExtResource( 67 ), ExtResource( 66 ), ExtResource( 52 ), ExtResource( 62 ), ExtResource( 49 ), ExtResource( 46 ), ExtResource( 55 ), ExtResource( 45 ), ExtResource( 53 ), ExtResource( 54 ), ExtResource( 51 ), ExtResource( 63 ), ExtResource( 40 ), ExtResource( 42 ), ExtResource( 64 ), ExtResource( 36 ) ],
+"loop": false,
+"name": "Beam in",
+"speed": 20.0
+}, {
+"frames": [ ExtResource( 200 ) ],
+"loop": true,
+"name": "Face forward",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 10 ) ],
+"loop": true,
+"name": "Idle",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 175 ), ExtResource( 190 ), ExtResource( 193 ), ExtResource( 192 ), ExtResource( 177 ), ExtResource( 172 ) ],
+"loop": false,
+"name": "Jump",
+"speed": 20.0
+}, {
+"frames": [ ExtResource( 151 ), ExtResource( 157 ), ExtResource( 159 ), ExtResource( 152 ), ExtResource( 156 ), ExtResource( 152 ), ExtResource( 159 ), ExtResource( 157 ) ],
+"loop": true,
+"name": "Run",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 211 ), ExtResource( 210 ), ExtResource( 203 ), ExtResource( 204 ), ExtResource( 201 ) ],
+"loop": false,
+"name": "Shoot",
+"speed": 20.0
+}, {
+"frames": [ ExtResource( 209 ) ],
+"loop": true,
+"name": "Wall slide",
+"speed": 5.0
+} ]
+
+[node name="Player" type="KinematicBody2D"]
+position = Vector2( 117.053, 517.54 )
+scale = Vector2( 1.7, 1.7 )
+collision_mask = 123
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( -0.844978, 0.411621 )
+scale = Vector2( 0.896924, 1 )
+shape = SubResource( 9 )
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2( 9.15527e-05, -0.00312614 )
+rotation = 3.14159
+scale = Vector2( 0.82888, -0.843174 )
+current = true
+zoom = Vector2( 0.5, 0.5 )
+limit_bottom = 1750
+drag_margin_h_enabled = true
+drag_margin_v_enabled = true
+
+[node name="Danger_checker" type="Area2D" parent="."]
+position = Vector2( -0.771484, 0.0135803 )
+rotation = 3.14159
+scale = Vector2( 0.944263, -1.60396 )
+collision_layer = 0
+collision_mask = 16
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Danger_checker"]
+shape = SubResource( 31 )
+
+[node name="Fluid_checker" type="Area2D" parent="."]
+position = Vector2( -0.771484, 0.0135803 )
+rotation = 3.14159
+scale = Vector2( 0.944263, -1.60396 )
+collision_layer = 0
+collision_mask = 32
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Fluid_checker"]
+shape = SubResource( 31 )
+
+[node name="Anim_Parts" type="Node2D" parent="."]
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Spark_anim" type="AnimatedSprite" parent="Anim_Parts"]
+frames = SubResource( 11 )
+animation = "Idle"
+offset = Vector2( 28, 0 )
+flip_h = true
+
+[node name="Right_arm" type="AnimatedSprite" parent="Anim_Parts"]
+frames = SubResource( 14 )
+animation = "Wall slide"
+playing = true
+
+[node name="Head" type="AnimatedSprite" parent="Anim_Parts"]
+frames = SubResource( 13 )
+animation = "Wall slide"
+playing = true
+
+[node name="Right_leg" type="AnimatedSprite" parent="Anim_Parts"]
+frames = SubResource( 17 )
+animation = "Wall slide"
+playing = true
+
+[node name="Body" type="AnimatedSprite" parent="Anim_Parts"]
+frames = SubResource( 16 )
+animation = "Wall slide"
+playing = true
+
+[node name="Left_leg" type="AnimatedSprite" parent="Anim_Parts"]
+frames = SubResource( 15 )
+animation = "Wall slide"
+playing = true
+
+[node name="Left_Arm" type="AnimatedSprite" parent="Anim_Parts"]
+frames = SubResource( 12 )
+animation = "Wall slide"
+playing = true
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 5.0
+one_shot = true
+
+[node name="Bullet_shot" type="Timer" parent="."]
+one_shot = true
+
+[node name="Bullet_charge" type="Timer" parent="."]
+one_shot = true
+
+[connection signal="body_entered" from="Danger_checker" to="." method="_on_Danger_checker_body_entered"]
+[connection signal="body_exited" from="Danger_checker" to="." method="_on_Danger_checker_body_exited"]
+[connection signal="body_entered" from="Fluid_checker" to="." method="_on_Fluid_checker_body_entered"]
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
+[connection signal="timeout" from="Bullet_shot" to="." method="_on_Bullet_shot_timeout"]
+[connection signal="timeout" from="Bullet_charge" to="." method="_on_Bullet_charge_timeout"]

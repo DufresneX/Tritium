@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/The tritium core.mp3-c61a06369e6364c6cea26788164be83d.mp3str"
+
+[deps]
+
+source_file="res://res/mus/The tritium core.mp3"
+dest_files=[ "res://.import/The tritium core.mp3-c61a06369e6364c6cea26788164be83d.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0
