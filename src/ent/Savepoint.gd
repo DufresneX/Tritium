@@ -7,12 +7,14 @@ var no_button = 0
 var X
 var Y
 
+
 signal save
 signal prep_for_save
 
 func _ready():
 	$Area2D.monitoring = true
-
+	
+	
 func _physics_process(_delta):
 	X = global_position.x
 	Y = global_position.y
@@ -24,7 +26,7 @@ func _on_Area2D_body_entered(_body):
 	$Timer.start()
 
 func _on_Yes_save_button_up():
-	emit_signal("save", X, Y)
+	emit_signal("save", X, Y, name)
 	$CanvasLayer/Popup.hide()
 	
 	next_anim = 1
@@ -63,10 +65,12 @@ func _on_AnimatedSprite_frame_changed():
 	else:
 		anim_frame +=1
 
-func _on_Player_died():
-	$Area2D.monitoring = false
-	
-	print("Disabled")
+func _on_Player_died(saved_at):
+	print("Returning to ", saved_at, ".")
+	if name == saved_at:
+		$Area2D.monitoring = false
+		
+		print("Disabled")
 
 func _on_Player_gone_checker_body_exited(_body):
 	$Area2D.monitoring = true

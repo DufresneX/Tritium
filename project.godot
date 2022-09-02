@@ -88,6 +88,6 @@ common/enable_pause_aware_picking=true
 
 quality/driver/fallback_to_gles2=true
 threads/thread_model=2
-gles3/shaders/max_simultaneous_compiles=4
 environment/default_clear_color=Color( 0.152941, 0.152941, 0.152941, 1 )
 environment/default_environment="res://default_env.tres"
+gles3/shaders/max_simultaneous_compiles=4

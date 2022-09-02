@@ -95,7 +95,6 @@ uppercase = true
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 2 )
-pitch_scale = 1.5
 script = ExtResource( 3 )
 
 [connection signal="pressed" from="Button" to="Button" method="_on_Button_pressed"]

@@ -4,6 +4,7 @@ export var GRAVITY = 30
 export var JUMP_HEIGHT = -650
 
 export var slipperyness = 2
+export var hptank_parts = 0
 export var hp = 100
 
 export var bullet = preload("res://scn/ent/player/Player_bullet.tscn")
@@ -14,10 +15,11 @@ var max_speed = 100
 var lives = 2
 
 var max_hp = 100
-var hptank_parts = 0
+
 
 var saveX = 93
 var saveY = 3
+var saved_at
 
 var in_lava = 0
 var dir = 1
@@ -35,6 +37,7 @@ signal died
 signal shoot(x, y, dir)
 
 func _ready():
+	hp = hptank_parts * 100 + 100
 	$Anim_Parts/Body.play("Beam in", true)
 	$Anim_Parts/Head.play("Beam in", true)
 	$Anim_Parts/Left_Arm.play("Beam in", true)
@@ -63,7 +66,7 @@ func _physics_process(_delta):
 			else:
 				 velocity.x = max_speed
 	
-	elif Input.is_action_pressed("Left"):
+	elif Input.is_action_pressed("Left") and position.x > -2000:
 		if saving == 0:
 			dir = 500
 			
@@ -96,6 +99,9 @@ func _physics_process(_delta):
 			
 			if velocity.x > 0:
 				velocity.x = 0
+				
+		if position.x < -2000:
+			position.x = -2000.01
 
 	# Animations
 	# ----------
@@ -105,7 +111,7 @@ func _physics_process(_delta):
 		$Anim_Parts/Body.play("Face forward")
 		$Anim_Parts/Head.play("Face forward")
 		
-		if not Input.is_action_pressed("Shoot"):
+		if !Input.is_action_pressed("Shoot"):
 			$Anim_Parts/Left_Arm.play("Face forward")
 		
 		$Anim_Parts/Left_leg.play("Face forward")
@@ -172,7 +178,7 @@ func _physics_process(_delta):
 		$Anim_Parts/Spark_anim.play("Idle")
 
 	# Shoot
-	if Input.is_action_pressed("Shoot"):
+	if Input.is_action_pressed("Shoot") and saving == 0:
 		emit_signal("shoot", position.x, position.y, dir)
 		$Anim_Parts/Left_Arm.play("Shoot")
 		shoot()
@@ -192,12 +198,12 @@ func _physics_process(_delta):
 	
 	if hp < 0.5:
 		if lives > 0:
-			emit_signal("died")
+			emit_signal("died", saved_at)
 			lives -= 1
 			
 			position.x = saveX
 			position.y = saveY
-			hp = 100
+			hp = max_hp
 		
 		else:
 			var check_err = get_tree().change_scene("res://Game over.tscn")
@@ -209,7 +215,7 @@ func _physics_process(_delta):
 
 	velocity = move_and_slide(velocity,Vector2.UP)
 
-func _on_Area2D_body_entered(_body):
+func _on_Bottom_body_entered(_body):
 	if lives > 0:
 		hp = 0
 	
@@ -228,9 +234,11 @@ func _on_Danger_checker_body_exited(_body):
 func _on_Fluid_checker_body_entered(_body):
 	velocity.y = 5000
 
-func _on_Savepoint_save(X, Y):
+func _on_Savepoint_save(X, Y, Name):
 	saveX = X
 	saveY = Y
+	saved_at = Name
+	print("Player has saved at ",saved_at, ".")
 	
 	position.x = X
 	position.y = Y
@@ -248,6 +256,7 @@ func _on_Savepoint_prep_for_save(X, Y):
 	velocity.x = 0
 	velocity.y = 0
 	
+	_change_modulate(255,255,255,255)
 	position.x = X
 	position.y = Y
 
@@ -279,3 +288,16 @@ func _on_Bullet_charge_timeout():
 	
 	if charge_level < max_charge_level:
 		charge_level += 1
+		
+func _ouch(damage):
+	hp -= damage
+	#TODO: Make invincibility timer
+	#TODO: Make and play damage animation
+
+func _change_modulate(r,g,b,a):
+	$Anim_Parts/Head.modulate = Color(r,g,b,a)
+	$Anim_Parts/Body.modulate = Color(r,g,b,a)
+	$Anim_Parts/Left_Arm.modulate = Color(r,g,b,a)
+	$Anim_Parts/Left_leg.modulate = Color(r,g,b,a)
+	$Anim_Parts/Right_arm.modulate = Color(r,g,b,a)
+	$Anim_Parts/Right_leg.modulate = Color(r,g,b,a)
